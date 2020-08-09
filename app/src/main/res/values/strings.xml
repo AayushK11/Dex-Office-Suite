@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dex Office Suite</string>
+    <string name="dex"><b>DEX</b></string>
+    <string name="officesuite"><b>Office Suite</b></string>
+    <string name="developedby">Developed by Aayush Kumaria\nDesigned by Ajinkya Rajkar</string>
+    <string name="logo">logo</string>
+</resources>
