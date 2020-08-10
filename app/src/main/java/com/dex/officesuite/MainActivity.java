@@ -4,17 +4,32 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+
+
 public class MainActivity extends AppCompatActivity {
+
+    SharedPreferences theme = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        theme = getSharedPreferences("com.example.hab", MODE_PRIVATE);
+        if(theme.getBoolean("themeset",true)) {
+            setTheme(R.style.LightThemeBar);
+        }
+        else {
+            setTheme(R.style.DarkThemeBar);
+        }
+
         setContentView(R.layout.activity_main);
+
+
     }
 
     @Override
