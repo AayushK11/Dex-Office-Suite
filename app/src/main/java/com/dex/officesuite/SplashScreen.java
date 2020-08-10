@@ -81,8 +81,8 @@ public class SplashScreen extends AppCompatActivity {
                 if(prefs.getBoolean("prefSplash",true)){
                     prefs.edit().putBoolean("prefSplash",false).apply();
                     Log.i("Splash Screen","---->Welcome Screen");
-                    //Intent intent = new Intent(SplashScreen.this, WelcomeScreen.class);
-                    //startActivity(intent);
+                    Intent intent = new Intent(SplashScreen.this, WelcomeScreen.class);
+                    startActivity(intent);
                 }
                 else {
                     Log.i("Splash Screen", "---->Main Activity");

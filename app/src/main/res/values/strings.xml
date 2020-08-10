@@ -4,4 +4,12 @@
     <string name="officesuite"><b>Office Suite</b></string>
     <string name="developedby">Developed by Aayush Kumaria\nDesigned by Ajinkya Rajkar</string>
     <string name="logo">logo</string>
+    <string name="welcome1">Welcome to the Beta Version of Dex Office Suite</string>
+    <string name="welcome2">In the Current version, you get a variety of products out of the box. Pun Intended</string>
+    <string name="welcome3">Don\'t feel like clicking around? No problem. Try our voice assistant to make everything easier</string>
+    <string name="welcome4">Oh. We forgot. We have dark mode too. Enable it in the settings. And now you\'re all set. Enjoy</string>
+    <string name="dot1">dot1</string>
+    <string name="dot2">dot2</string>
+    <string name="dot3">dot3</string>
+    <string name="dot4">dot4</string>
 </resources>
