@@ -7,10 +7,10 @@
     android:background="?attr/bgColor">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:contentDescription="@string/logo"
-        android:src="@drawable/dex_logo"
+        android:src="@drawable/voice_assistant"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

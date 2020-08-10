@@ -27,4 +27,10 @@
     <string name="privacy_4">One of our unique features is our Voice Assistant we like to call \'Dexer\' (Subject to change)\n\n For Dexer to hear your commands, the app would need audio permissions.\n\nSo feel free to speak your mind. We can\'t hear you 🎤</string>
     <string name="we_don_t_like_back_buttons_just_swipe_right">We Aren\'t Fond of Back Buttons. Just Swipe Right</string>
     <string name="animarrow">animarrow</string>
+    <string name="canvas">CANVAS</string>
+    <string name="ocr_scanner">OCR SCANNER</string>
+    <string name="notepad">NOTEPAD</string>
+    <string name="scanner">SCANNER</string>
+    <string name="pdf_reader">PDF READER</string>
+    <string name="to_do">TO DO</string>
 </resources>
