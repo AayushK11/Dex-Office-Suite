@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
 //            askRecordPerm();
         }
         else if(menuItem.getItemId() == R.id.privacy){
-//            Intent intent = new Intent(MainActivity.this, PrivacyPage.class);
-//            startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, PrivacyPage.class);
+            startActivity(intent);
         }
         else if(menuItem.getItemId() == R.id.settings){
             Intent intent = new Intent(MainActivity.this, SettingsPage.class);
