@@ -7,5 +7,5 @@
     <!--Main Colors-->
     <color name="blue_title">#4b8cd9</color>
     <color name="black_title">#000000</color>
-    <color name="colorPrimaryDarkStatus">#ffffff</color>
+    <color name="white_title">#ffffff</color>
 </resources>
