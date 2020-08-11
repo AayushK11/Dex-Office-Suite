@@ -43,4 +43,6 @@
     <string name="preview_image">Preview Image</string>
     <string name="no_text">No text found</string>
     <string name="scan_again">Scan Again</string>
+    <string name="display_uploadicon">display_uploadIcon</string>
+    <string name="select_image_to_scan">Select image to scan</string>
 </resources>
