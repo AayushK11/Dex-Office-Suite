@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "158113330599",
+    "firebase_url": "https://dex-office-suite.firebaseio.com",
+    "project_id": "dex-office-suite",
+    "storage_bucket": "dex-office-suite.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158113330599:android:2deb38bba586a678b43282",
+        "android_client_info": {
+          "package_name": "com.dex.officesuite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158113330599-2jhdeig2ab5ob10ok2j01cpa595hph36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmE3Az1nSzH9lro728oZuH0P9uJAa-fbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158113330599-2jhdeig2ab5ob10ok2j01cpa595hph36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
