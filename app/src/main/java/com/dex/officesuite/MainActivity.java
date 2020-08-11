@@ -16,7 +16,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     SharedPreferences theme = null;
-    CardView ocr;
+    CardView ocr,scanner_card;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        scanner_card=findViewById(R.id.scanner);
+        scanner_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ScannerActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
