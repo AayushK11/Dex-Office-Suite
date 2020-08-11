@@ -33,4 +33,6 @@
     <string name="scanner">SCANNER</string>
     <string name="pdf_reader">PDF READER</string>
     <string name="to_do">TO DO</string>
+    <string name="scan">SCAN</string>
+    <string name="image_display">image_display</string>
 </resources>
