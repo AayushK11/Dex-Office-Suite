@@ -30,7 +30,7 @@ public class WelcomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-        theme = getSharedPreferences("com.example.hab", MODE_PRIVATE);
+        theme = getSharedPreferences("com.dex.officesuite", MODE_PRIVATE);
         if(theme.getBoolean("themeset",true)) {
             setTheme(R.style.LightTheme);
         }

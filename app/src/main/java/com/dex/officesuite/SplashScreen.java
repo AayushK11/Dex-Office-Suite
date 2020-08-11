@@ -22,7 +22,7 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        theme = getSharedPreferences("com.example.hab", MODE_PRIVATE);
+        theme = getSharedPreferences("com.dex.officesuite", MODE_PRIVATE);
         if(theme.getBoolean("themeset",true)) {
             setTheme(R.style.LightTheme);
         }
@@ -34,7 +34,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
         logo = findViewById(R.id.logo);
-        prefs = getSharedPreferences("com.example.hab", MODE_PRIVATE);
+        prefs = getSharedPreferences("com.dex.officesuite", MODE_PRIVATE);
         appname = findViewById(R.id.appname);
         appbaseline = findViewById(R.id.appbaseline);
         devname = findViewById(R.id.devname);
