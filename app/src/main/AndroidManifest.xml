@@ -17,26 +17,40 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="q">
-        <activity android:name=".ScannerActivity"
+        <activity android:name=".NotepadEditor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NotepadActivity">
+
+        </activity>
+        <activity
+            android:name=".ScannerActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
         <activity android:name=".ImageFullScreenActivity" />
-        <activity android:name=".OcrActivity"
+        <activity
+            android:name=".OcrActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
-        <activity android:name=".PrivacyPage"
+        <activity
+            android:name=".PrivacyPage"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
-        <activity android:name=".SettingsPage"
+        <activity
+            android:name=".SettingsPage"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -45,11 +59,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".WelcomeScreen" />
         <activity android:name=".SplashScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <provider

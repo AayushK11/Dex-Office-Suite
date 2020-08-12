@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor"
+    tools:context=".NotepadEditor">
+    <EditText
+        android:id="@+id/title_note"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top|start"
+        android:inputType="textCapSentences"
+        android:hint="@string/title"
+        android:textColor="?attr/textColor"
+        android:background="?attr/bgColor"
+        android:textSize="25sp"
+        android:textColorHint="?attr/metaTextColor"
+        android:textStyle="bold"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@id/view_s"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/view_s"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_note"
+        app:layout_constraintBottom_toTopOf="@id/note_ET"
+        android:background="?attr/metaTextColor"/>
+
+    <EditText
+        android:id="@+id/note_ET"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="10dp"
+        android:gravity="top|start"
+        android:textSize="18sp"
+        android:textColorHint="?attr/metaTextColor"
+        android:background="?attr/bgColor"
+        android:textColor="?attr/textColor"
+        android:inputType="textMultiLine"
+        android:hint="@string/note"
+        android:singleLine="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_s"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

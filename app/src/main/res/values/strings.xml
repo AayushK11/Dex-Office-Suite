@@ -48,4 +48,8 @@
     <string name="your_generated_pdf_is">Your Generated PDF Is:</string>
     <string name="creating_your_pdf_please_wait">Creating Your PDF. Please Wait</string>
     <string name="click_scan_now_to_start_scanning">Click Scan Now to Start Scanning</string>
+    <string name="title">Title</string>
+    <string name="note">Note</string>
+    <string name="click_here_to_add_your_first_note">Click here to add your first note</string>
+    <string name="plusicon">plusIcon</string>
 </resources>
