@@ -48,4 +48,19 @@
     <string name="your_generated_pdf_is">Your Generated PDF Is:</string>
     <string name="creating_your_pdf_please_wait">Creating Your PDF. Please Wait</string>
     <string name="click_scan_now_to_start_scanning">Click Scan Now to Start Scanning</string>
+    <string name="new_canvas">New Canvas</string>
+    <string name="brush">Brush</string>
+    <string name="eraser">Eraser</string>
+    <string name="save_canvas">Save Canvas</string>
+    <string name="black_paint">Black Paint</string>
+    <string name="brown_paint">Brown Paint</string>
+    <string name="red_paint">Red Paint</string>
+    <string name="orange_theme">Orange Theme</string>
+    <string name="yellow_paint">Yellow Paint</string>
+    <string name="green_paint">Green Paint</string>
+    <string name="pink_paint">Pink Paint</string>
+    <string name="purple_paint">Purple Paint</string>
+    <string name="blue_paint">Blue Paint</string>
+    <string name="white_paint">White Paint</string>
+    <string name="grey_paint">Grey Paint</string>
 </resources>

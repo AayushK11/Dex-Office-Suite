@@ -17,6 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="q">
+        <activity android:name=".CanvasActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dex.officesuite.MainActivity" />
+        </activity>
         <activity android:name=".ScannerActivity"
             android:parentActivityName=".MainActivity">
             <meta-data

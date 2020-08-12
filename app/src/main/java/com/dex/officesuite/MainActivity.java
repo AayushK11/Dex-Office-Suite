@@ -16,7 +16,8 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     SharedPreferences theme = null;
-    CardView ocr,scanner_card;
+    CardView ocr,scanner, canvas;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         else {
             setTheme(R.style.DarkThemeBar);
         }
-
         setContentView(R.layout.activity_main);
 
         ocr = findViewById(R.id.ocr_card);
@@ -39,11 +39,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        scanner_card=findViewById(R.id.scanner);
-        scanner_card.setOnClickListener(new View.OnClickListener() {
+        scanner=findViewById(R.id.scanner_card);
+        scanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,ScannerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        canvas=findViewById(R.id.canvas_card);
+        canvas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,CanvasActivity.class);
                 startActivity(intent);
             }
         });
