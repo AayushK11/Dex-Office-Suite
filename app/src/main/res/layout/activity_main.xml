@@ -17,6 +17,7 @@
 
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/canvas_card"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_row="0"
@@ -135,7 +136,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/scanner"
+            android:id="@+id/scanner_card"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_row="1"
