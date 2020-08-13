@@ -22,7 +22,7 @@ Currently, Dex Office Suite provides you with the following features:
    - <b>Document Scanning</b>: Convert Images to PDF format
    - <b>Canvas</b>: Helpful to draw your mind or express something
    - <b>Notepad</b>: Note down important points so that you don't forget it
-   - <b>PDF Viewer</b>: Open any kind of PDF format and read it like a book
+   - <b>PDF Viewer</b>: Open any document of PDF format and read it like a book
    - <b>TaskPad</b>: Note Down Tasks that need to be completed
  
 And many more to come....
