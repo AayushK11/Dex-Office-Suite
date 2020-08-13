@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="?attr/bgColor"
     tools:context=".NotepadEditor">
+
     <EditText
         android:id="@+id/title_note"
         android:layout_width="match_parent"
@@ -16,6 +17,7 @@
         android:inputType="textCapSentences"
         android:hint="@string/title"
         android:textColor="?attr/textColor"
+        android:autofillHints="@string/title"
         android:background="?attr/bgColor"
         android:textSize="25sp"
         android:textColorHint="?attr/metaTextColor"
@@ -25,6 +27,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
     <View
         android:id="@+id/view_s"
         android:layout_marginHorizontal="10dp"
@@ -36,13 +40,16 @@
         app:layout_constraintBottom_toTopOf="@id/note_ET"
         android:background="?attr/metaTextColor"/>
 
+
+
     <EditText
         android:id="@+id/note_ET"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="550dp"
         android:layout_margin="10dp"
         android:gravity="top|start"
         android:textSize="18sp"
+        android:autofillHints="@string/notepad"
         android:textColorHint="?attr/metaTextColor"
         android:background="?attr/bgColor"
         android:textColor="?attr/textColor"

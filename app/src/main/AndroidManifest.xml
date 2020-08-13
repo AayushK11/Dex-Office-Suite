@@ -19,10 +19,20 @@
         tools:targetApi="q">
 
       
-        <activity android:name=".NotepadEditor"/>
-        <activity android:name=".NotepadActivity">
-          
-          
+        <activity android:name=".NotepadEditor"
+            android:parentActivityName=".NotepadActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dex.officesuite.NotepadActivity" />
+        </activity>
+        <activity android:name=".NotepadActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dex.officesuite.MainActivity" />
+        </activity>
+
+
         <activity android:name=".CanvasActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -37,9 +47,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
+
+
         <activity android:name=".ImageFullScreenActivity" />
-  
-  
         <activity android:name=".OcrActivity"
             android:parentActivityName=".MainActivity">
             <meta-data

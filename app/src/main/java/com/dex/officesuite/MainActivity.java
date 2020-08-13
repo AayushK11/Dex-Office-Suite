@@ -16,7 +16,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     SharedPreferences theme = null;
-    CardView ocr,scanner, canvas;
+    CardView ocr,scanner, canvas, notepad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,CanvasActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        notepad=findViewById(R.id.notepad_card);
+        notepad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,NotepadActivity.class);
                 startActivity(intent);
             }
         });

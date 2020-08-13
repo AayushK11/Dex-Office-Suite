@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/notepad_background"
+    android:background="?attr/bgColor"
     tools:context=".NotepadActivity">
 
     <ListView
@@ -14,14 +14,18 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:dividerHeight="5.0sp"
-        android:layout_margin="15dp"
-        android:visibility="invisible"
+        android:layout_margin="10dp"
+        android:visibility="visible"
         android:id="@+id/listview"/>
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="40dp"
+        android:id="@+id/layout_CL"
+        android:visibility="invisible"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/notepad_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -35,7 +39,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:src="@drawable/ic_baseline_add_circle_24"
-            android:contentDescription="@string/plusicon"
+            android:contentDescription="@string/add_note"
             app:tint="?attr/metaTextColor">
         </ImageView>
 
@@ -44,12 +48,12 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/plus_icon"
             android:layout_margin="20dp"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="?attr/textColor"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="@string/click_here_to_add_your_first_note">
+            android:text="@string/click_the_icon_to_create_your_first_note">
 
         </TextView>
 
