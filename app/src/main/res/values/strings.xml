@@ -63,4 +63,8 @@
     <string name="blue_paint">Blue Paint</string>
     <string name="white_paint">White Paint</string>
     <string name="grey_paint">Grey Paint</string>
+    <string name="title">Title</string>
+    <string name="note">Note</string>
+    <string name="click_here_to_add_your_first_note">Click here to add your first note</string>
+    <string name="plusicon">plusIcon</string>
 </resources>

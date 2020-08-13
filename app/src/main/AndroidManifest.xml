@@ -17,31 +17,45 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="q">
+
+      
+        <activity android:name=".NotepadEditor"/>
+        <activity android:name=".NotepadActivity">
+          
+          
         <activity android:name=".CanvasActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
-        <activity android:name=".ScannerActivity"
-            android:parentActivityName=".MainActivity">
+  
+  
+        <activity android:name=".ScannerActivity" 
+                  android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
         <activity android:name=".ImageFullScreenActivity" />
+  
+  
         <activity android:name=".OcrActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
+  
+  
         <activity android:name=".PrivacyPage"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
+  
+  
         <activity android:name=".SettingsPage"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -49,7 +63,11 @@
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
         <activity android:name=".MainActivity" />
+  
+  
         <activity android:name=".WelcomeScreen" />
+  
+  
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
