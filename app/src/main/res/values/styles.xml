@@ -41,6 +41,7 @@
         <item name="android:actionBarStyle">@style/MyActionBar</item>
         <item name="android:textColor">#ffffff</item>
         <item name="android:itemBackground">#000000</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
     </style>
 
     <style name="DotsTheme" parent="@style/Widget.AppCompat.ActionButton.Overflow">
@@ -62,6 +63,14 @@
         <item name="colorAccent">?attr/textColor</item>
         <item name="android:textColorPrimary">?attr/textColor</item>
         <item name="android:background">?attr/closeEnough</item>
+    </style>
+
+    <style name="ListViewStyle" parent="android:style/Widget.AbsListView">
+        <item name="background">?attr/bgColor</item>
+        <item name="android:divider">?attr/metaTextColor</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">#00000000</item>
     </style>
 
 </resources>
