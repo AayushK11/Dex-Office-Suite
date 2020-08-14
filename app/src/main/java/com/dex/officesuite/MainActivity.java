@@ -16,7 +16,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     SharedPreferences theme = null;
-    CardView ocr,scanner, canvas, notepad;
+    CardView ocr,scanner, canvas, notepad, pdfViewer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +62,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,NotepadActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        pdfViewer=findViewById(R.id.pdfViewer_card);
+        pdfViewer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,PdfViewerActivity.class);
                 startActivity(intent);
             }
         });

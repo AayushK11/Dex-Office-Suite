@@ -17,67 +17,70 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="q">
-
-      
-        <activity android:name=".NotepadEditor"
+        <activity android:name=".PdfViewerScreen"
+            android:parentActivityName=".PdfViewerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dex.officesuite.PdfViewerActivity" />
+        </activity>
+        <activity android:name=".PdfViewerActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dex.officesuite.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NotepadEditor"
             android:parentActivityName=".NotepadActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.NotepadActivity" />
         </activity>
-        <activity android:name=".NotepadActivity"
+        <activity
+            android:name=".NotepadActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
-
-
-        <activity android:name=".CanvasActivity"
+        <activity
+            android:name=".CanvasActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
-  
-  
-        <activity android:name=".ScannerActivity" 
-                  android:parentActivityName=".MainActivity">
+        <activity
+            android:name=".ScannerActivity"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
-
-
         <activity android:name=".ImageFullScreenActivity" />
-        <activity android:name=".OcrActivity"
+        <activity
+            android:name=".OcrActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
-  
-  
-        <activity android:name=".PrivacyPage"
+        <activity
+            android:name=".PrivacyPage"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
-  
-  
-        <activity android:name=".SettingsPage"
+        <activity
+            android:name=".SettingsPage"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.MainActivity" />
         </activity>
         <activity android:name=".MainActivity" />
-  
-  
         <activity android:name=".WelcomeScreen" />
-  
-  
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
