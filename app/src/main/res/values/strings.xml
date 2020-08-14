@@ -68,4 +68,5 @@
     <string name="note">Note</string>
     <string name="click_the_icon_to_create_your_first_note">Click the icon to create your first note</string>
     <string name="find_pdfs_please_wait">Find PDFs. Please Wait</string>
+    <string name="voice_typing">Voice Typing</string>
 </resources>

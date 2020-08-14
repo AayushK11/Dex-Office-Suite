@@ -55,7 +55,7 @@ public class PdfViewerActivity extends AppCompatActivity {
 
         progressBar.setVisibility(View.VISIBLE);
         textView.setVisibility(View.VISIBLE);
-        
+
         askReadPermissions();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -136,8 +136,18 @@ public class PdfViewerActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        pdfs.clear();
+        names.clear();
+        askReadPermissions();
+    }
+
+    @Override
     public void onBackPressed() {
         Intent intent=new Intent(this,MainActivity.class);
+        pdfs.clear();
+        names.clear();
         startActivity(intent);
         finish();
     }
@@ -145,6 +155,8 @@ public class PdfViewerActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
+            pdfs.clear();
+            names.clear();
             NavUtils.navigateUpFromSameTask(this);
             finish();
             return true;
