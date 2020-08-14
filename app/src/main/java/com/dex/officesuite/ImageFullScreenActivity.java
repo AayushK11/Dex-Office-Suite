@@ -30,7 +30,8 @@ public class ImageFullScreenActivity extends AppCompatActivity {
 
         byte[] byteArray = getIntent().getByteArrayExtra("image");
         assert byteArray != null;
-        Bitmap bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);closeContextMenu();closeContextMenu();
+        Bitmap bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+        closeContextMenu();
 
         if(bmp!=null){
             fullScreenImageView.setImageBitmap(bmp);
