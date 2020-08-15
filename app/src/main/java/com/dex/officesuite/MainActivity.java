@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int RECORD_CODE = 100;
     private static final int AUDIO_CODE = 101;
     SharedPreferences theme = null;
-    CardView ocr,scanner, canvas, notepad, pdfViewer;
+    CardView ocr,scanner, canvas, notepad, pdfViewer, todo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,12 +87,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        todo=findViewById(R.id.todo_card);
+        todo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,TodoActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.voice_overflow, menu);
+        inflater.inflate(R.menu.home_overflow, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -171,7 +180,6 @@ public class MainActivity extends AppCompatActivity {
         int count = 0;
         for(String word:iptext){
             for(String testcase:OCR){
-                System.out.println(testcase);
                 if(word.equalsIgnoreCase(testcase) && count==0){
                     count++;
                     Intent intent = new Intent(MainActivity.this,OcrActivity.class);

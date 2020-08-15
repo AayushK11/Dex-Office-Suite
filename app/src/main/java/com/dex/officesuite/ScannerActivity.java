@@ -211,15 +211,12 @@ public class ScannerActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == SEND_CAMERA_IMAGE_CODE && resultCode == RESULT_OK) {
-            System.out.println(photoURI);
             photoURI = FileProvider.getUriForFile(getApplicationContext(), getApplicationContext().getPackageName() + ".provider", image);
-            System.out.println(photoURI);
             cropCamera(photoURI);
         }
         if (requestCode == GALLERY_CODE && resultCode == RESULT_OK) {
             assert data != null;
             picUri = data.getData();
-            System.out.println(picUri);
             cropGallery(picUri);
         }
         if (requestCode == PIC_CROP && resultCode == RESULT_OK) {
@@ -277,7 +274,6 @@ public class ScannerActivity extends AppCompatActivity {
             startActivityForResult(cropIntent, PIC_CROP);
         }
         catch(ActivityNotFoundException anfe){
-            //display an error message
             String errorMessage = "Whoops - your device doesn't support the crop action!";
             Toast toast = Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT);
             toast.show();
@@ -313,7 +309,6 @@ public class ScannerActivity extends AppCompatActivity {
         }
 
         File root = new File(Environment.getExternalStorageDirectory(), "/Dex Office/Scanner");
-        System.out.println(root);
         if(!root.exists()){
             //noinspection ResultOfMethodCallIgnored
             root.mkdirs();
@@ -321,7 +316,6 @@ public class ScannerActivity extends AppCompatActivity {
         String timeStamp = SimpleDateFormat.getDateTimeInstance().format(new Date());
         timeStamp = "PDF_"+timeStamp+".pdf";
         File file = new File(root, timeStamp);
-        System.out.println(file.toString());
 
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(file);
@@ -334,11 +328,11 @@ public class ScannerActivity extends AppCompatActivity {
 
         Uri PDFUri = Uri.fromFile(file);
         pdfView.fromUri(PDFUri)
-                .enableSwipe(true) // allows to block changing pages using swipe
-                .swipeHorizontal(true)
+                .enableSwipe(true)
+                .swipeHorizontal(false)
                 .enableDoubletap(true)
                 .defaultPage(0)
-                .enableAnnotationRendering(false) // render annotations (such as comments, colors or forms)
+                .enableAnnotationRendering(false)
                 .password(null)
                 .scrollHandle(null)
                 .enableAntialiasing(true)

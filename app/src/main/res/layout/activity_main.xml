@@ -218,6 +218,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/todo_card"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_row="2"

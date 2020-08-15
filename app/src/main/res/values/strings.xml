@@ -22,7 +22,7 @@
     <string name="why_do_we_need_storage_read_write_permissions">Why Do We Need R/W \nPermissions?</string>
     <string name="privacy_2">The only way the app can access the photos you want to scan or perform OCR on, or the only way we can store those amazing drawing you drew is by asking for these permissions.\n\nThere is no other need for it we promise 😇</string>
     <string name="why_do_we_need_camera_permissions">Why Do We Need Camera \nPermissions?</string>
-    <string name="privacy_3">We have put so many features into this app to prevent you from jumping between two or more apps. And that means moving between the camera and us.\n\nThe only time the camera is used is when you want to capture an image directly onto the app.\n\nOh, and we do not store those images. Sorry 🙈</string>
+    <string name="privacy_3">We have put so many features into this app to prevent you from jumping between two or more apps. And that means moving between the camera and us.\n\nThe only time the camera is used is when you want to capture an image directly onto the app 😊</string>
     <string name="why_we_do_need_audio_permissions">Why We Do Need Audio \nPermissions?</string>
     <string name="privacy_4">One of our unique features is our Voice Assistant we like to call \'Dexer\' (Subject to change)\n\n For Dexer to hear your commands, the app would need audio permissions.\n\nSo feel free to speak your mind. We can\'t hear you 🎤</string>
     <string name="we_don_t_like_back_buttons_just_swipe_right">We Aren\'t Fond of Back Buttons. Just Swipe Right</string>
@@ -69,4 +69,7 @@
     <string name="click_the_icon_to_create_your_first_note">Click the icon to create your first note</string>
     <string name="find_pdfs_please_wait">Find PDFs. Please Wait</string>
     <string name="voice_typing">Voice Typing</string>
+    <string name="no_tasks_created_yet">No tasks created. Yet</string>
+    <string name="pending_tasks">Pending Tasks</string>
+    <string name="completed_tasks">Completed Tasks</string>
 </resources>

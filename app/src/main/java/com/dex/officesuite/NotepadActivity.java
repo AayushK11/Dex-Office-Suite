@@ -63,7 +63,6 @@ public class NotepadActivity extends AppCompatActivity {
 
         arrayAdapter = new ArrayAdapter<>(this, R.layout.notes_list_test, title);
         listView.setAdapter(arrayAdapter);
-        System.out.println(title);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
