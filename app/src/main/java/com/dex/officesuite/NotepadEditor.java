@@ -77,13 +77,9 @@ public class NotepadEditor extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
                 NotepadActivity.notes.set(noteID, String.valueOf(s));
-                System.out.println(NotepadActivity.notes);
-                System.out.println(noteID);
-                System.out.println(s);
 
                 SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.dex.officesuite", Context.MODE_PRIVATE);
                 HashSet<String> hashSet = new HashSet<>(NotepadActivity.notes);
-                System.out.println(hashSet);
                 sharedPreferences.edit().putStringSet("notes", hashSet).apply();
             }
 

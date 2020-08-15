@@ -18,13 +18,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="q">
-        <activity android:name=".PdfViewerScreen"
+        <activity android:name=".TodoActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dex.officesuite.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PdfViewerScreen"
             android:parentActivityName=".PdfViewerActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dex.officesuite.PdfViewerActivity" />
         </activity>
-        <activity android:name=".PdfViewerActivity"
+        <activity
+            android:name=".PdfViewerActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

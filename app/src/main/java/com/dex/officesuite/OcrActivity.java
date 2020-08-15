@@ -300,7 +300,6 @@ public class OcrActivity extends AppCompatActivity {
             startActivityForResult(cropIntent, PIC_CROP);
         }
         catch(ActivityNotFoundException anfe){
-            //display an error message
             String errorMessage = "Whoops - your device doesn't support the crop action!";
             Toast toast = Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT);
             toast.show();
@@ -318,7 +317,7 @@ public class OcrActivity extends AppCompatActivity {
                         process(firebaseVisionText);
                     }
                 })
-                .addOnFailureListener(new OnFailureListener() {                                                //If Failure, add Listener
+                .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();

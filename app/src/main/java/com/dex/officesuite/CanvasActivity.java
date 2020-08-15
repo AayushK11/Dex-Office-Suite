@@ -120,7 +120,6 @@ public class CanvasActivity extends AppCompatActivity {
         if(v != currpaint) {
             ImageButton view = (ImageButton) v;
             String color = view.getTag().toString();
-            System.out.println(color);
             drawingView.setPaintColor(color);
             view.setImageDrawable(getResources().getDrawable(R.drawable.paint_pressed));
             currpaint.setImageDrawable(getResources().getDrawable(R.drawable.paint_normal));
