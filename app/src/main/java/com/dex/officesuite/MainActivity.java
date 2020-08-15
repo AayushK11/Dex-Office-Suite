@@ -175,6 +175,7 @@ public class MainActivity extends AppCompatActivity {
         String[] Notes = {"Notes","Note","New Note","Notepad","Note it","Make a Note","Create Note","Create a note"};
         String[] Canvas = {"Draw","Color","Colour","Canvas","Design", "Drawing","Drawing Pad"};
         String[] PDFViewer = {"Show","View","Viewer","Open a PDF","Show a PDF"};
+        String[] Todo = {"Task","Todo","To-do", "to do","New task", "New task list","New to do task","Open task list"};
         String[] Settings = {"Settings","Dark Mode","Dark", "Theme", "Light Mode", "Light"};
         String[] Privacy = {"Safety","Privacy","Notice","Privacy Notice","user", "data","User-data","Permissions","permission"};
         int count = 0;
@@ -215,6 +216,14 @@ public class MainActivity extends AppCompatActivity {
                 if(word.equalsIgnoreCase(testcase) && count==0){
                     count++;
                     Intent intent = new Intent(MainActivity.this,PdfViewerActivity.class);
+                    startActivity(intent);
+                    break;
+                }
+            }
+            for(String testcase:Todo){
+                if(word.equalsIgnoreCase(testcase) && count==0){
+                    count++;
+                    Intent intent = new Intent(MainActivity.this,TodoActivity.class);
                     startActivity(intent);
                     break;
                 }
