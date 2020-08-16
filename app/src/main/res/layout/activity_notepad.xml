@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/bgColor"
+    android:id="@+id/background_Notepad"
+    android:background="@drawable/notepad_background"
     tools:context=".NotepadActivity">
 
     <ListView
@@ -25,7 +26,6 @@
         android:id="@+id/layout_CL"
         android:visibility="invisible"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/notepad_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -40,7 +40,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:src="@drawable/ic_baseline_add_circle_24"
             android:contentDescription="@string/add_note"
-            app:tint="?attr/metaTextColor">
+            app:tint="?attr/inBetween">
+
         </ImageView>
 
         <TextView

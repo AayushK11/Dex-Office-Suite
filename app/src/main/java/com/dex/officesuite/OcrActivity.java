@@ -38,7 +38,6 @@ import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import com.google.firebase.ml.vision.text.FirebaseVisionText;
 import com.google.firebase.ml.vision.text.FirebaseVisionTextRecognizer;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -113,18 +112,9 @@ public class OcrActivity extends AppCompatActivity {
         preview_IM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-
-                Intent in1 = new Intent(OcrActivity.this, ImageFullScreenActivity.class);
-                in1.putExtra("image",byteArray);
-                startActivity(in1);
-                try {
-                    stream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                Intent intent = new Intent(OcrActivity.this, ImageFullScreenActivity.class);
+                intent.setData(picUri);
+                startActivity(intent);
             }
         });
 

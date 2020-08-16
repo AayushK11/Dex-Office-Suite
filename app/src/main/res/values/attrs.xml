@@ -4,4 +4,6 @@
     <attr name="textColor" format="color" />
     <attr name="metaTextColor" format="color" />
     <attr name="closeEnough" format="color" />
+    <attr name="inBetween" format="color"/>
+
 </resources>

@@ -28,6 +28,7 @@ import android.provider.MediaStore;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -58,6 +59,7 @@ public class ScannerActivity extends AppCompatActivity {
     String imageFilePath;
     File image;
     Uri photoURI, picUri;
+    ImageView imageView;
     Bitmap bitmap;
     ArrayList<Bitmap> bitlist = new ArrayList<>();
     String selected = "";
@@ -79,6 +81,15 @@ public class ScannerActivity extends AppCompatActivity {
         startScan = findViewById(R.id.scan_multi);
         Backdrop = findViewById(R.id.layout_2);
         pdfView = findViewById(R.id.pdfView);
+        imageView = findViewById(R.id.upload_icon);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selected = "Many";
+                ImagePicker();
+            }
+        });
 
         startScan.setOnClickListener(new View.OnClickListener() {
             @Override

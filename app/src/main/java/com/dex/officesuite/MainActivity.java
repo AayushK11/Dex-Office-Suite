@@ -2,7 +2,7 @@ package com.dex.officesuite;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int RECORD_CODE = 100;
     private static final int AUDIO_CODE = 101;
     SharedPreferences theme = null;
-    CardView ocr,scanner, canvas, notepad, pdfViewer, todo;
+    ConstraintLayout ocr,scanner, canvas, notepad, pdfViewer, todo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         }
         setContentView(R.layout.activity_main);
 
-        ocr = findViewById(R.id.ocr_card);
+        ocr = findViewById(R.id.OCR_Card);
         ocr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        scanner=findViewById(R.id.scanner_card);
+        scanner=findViewById(R.id.SCANNER_Card);
         scanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        canvas=findViewById(R.id.canvas_card);
+        canvas=findViewById(R.id.CANVAS_Card);
         canvas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        notepad=findViewById(R.id.notepad_card);
+        notepad=findViewById(R.id.NOTEPAD_Card);
         notepad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        pdfViewer=findViewById(R.id.pdfViewer_card);
+        pdfViewer=findViewById(R.id.PDFViewer_Card);
         pdfViewer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        todo=findViewById(R.id.todo_card);
+        todo=findViewById(R.id.TODO_Card);
         todo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
