@@ -206,15 +206,15 @@ public class NotepadEditor extends AppCompatActivity {
     }
 
     public void parseArrayList(String[] list){
-        for(String word:list){
-            if(title_ET.hasFocus()){
-                String temp = title_ET.getText()+" "+word;
-                title_ET.setText(temp);
-            }
-            else {
-                String temp = note_ET.getText()+" "+word;
-                note_ET.setText(temp);
-            }
+        String word = list[0];
+        System.out.println(word);
+        if(title_ET.hasFocus()){
+            String temp = title_ET.getText()+" "+word;
+            title_ET.setText(temp);
+        }
+        else {
+            String temp = note_ET.getText()+" "+word;
+            note_ET.setText(temp);
         }
     }
 }

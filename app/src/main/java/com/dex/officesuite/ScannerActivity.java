@@ -62,7 +62,7 @@ public class ScannerActivity extends AppCompatActivity {
     ImageView imageView;
     Bitmap bitmap;
     ArrayList<Bitmap> bitlist = new ArrayList<>();
-    String selected = "";
+    String selected = "", source = "";
     SharedPreferences theme = null;
 
     @Override
@@ -111,12 +111,13 @@ public class ScannerActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 if(items[which].equals("Take a Photo")){
                     dialog.dismiss();
+                    source = "camera";
                     askCameraPermissions();
                 }
                 else if(items[which].equals("Select From Gallery")){
                     dialog.dismiss();
-                    Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                    startActivityForResult(gallery, GALLERY_CODE);
+                    source = "gallery";
+                    askCameraPermissions();
                 }
                 else if(items[which].equals("Cancel")){
                     dialog.dismiss();
@@ -149,7 +150,13 @@ public class ScannerActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE}, WRITE_PERM_CODE);
         }
         else{
-            OpenCamera();
+            if(source.equals("camera")) {
+                OpenCamera();
+            }
+            else if(source.equals("gallery")){
+                Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(gallery, GALLERY_CODE);
+            }
         }
     }
 
@@ -173,7 +180,13 @@ public class ScannerActivity extends AppCompatActivity {
         }
         if(requestCode == WRITE_PERM_CODE){
             if(grantResults.length > 0 && grantResults[0]==PackageManager.PERMISSION_GRANTED){
-                OpenCamera();
+                if(source.equals("camera")) {
+                    OpenCamera();
+                }
+                else if(source.equals("gallery")){
+                    Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                    startActivityForResult(gallery, GALLERY_CODE);
+                }
             }
             else {
                 Toast.makeText(this,"R/W Permissions are required to ensure smooth functioning of the app", Toast.LENGTH_SHORT).show();
@@ -321,7 +334,6 @@ public class ScannerActivity extends AppCompatActivity {
 
         File root = new File(Environment.getExternalStorageDirectory(), "/Dex Office/Scanner");
         if(!root.exists()){
-            //noinspection ResultOfMethodCallIgnored
             root.mkdirs();
         }
         String timeStamp = SimpleDateFormat.getDateTimeInstance().format(new Date());
