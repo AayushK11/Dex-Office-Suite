@@ -27,9 +27,7 @@
     <string name="privacy_4">One of our unique features is our Voice Assistant we like to call \'Dexer\' (Subject to change)\n\n For Dexer to hear your commands, the app would need audio permissions.\n\nSo feel free to speak your mind. We can\'t hear you 🎤</string>
     <string name="we_don_t_like_back_buttons_just_swipe_right">We Aren\'t Fond of Back Buttons. Just Swipe Right</string>
     <string name="animarrow">animarrow</string>
-    <string name="canvas">CANVAS</string>
-    <string name="ocr_scanner">OCR SCANNER</string>
-    <string name="notepad">NOTEPAD</string>
+    <string name="ocr_scanner">OCR</string>
     <string name="scanner">SCANNER</string>
     <string name="pdf_reader">PDF READER</string>
     <string name="to_do">TO DO</string>
@@ -66,10 +64,17 @@
     <string name="add_note">Add Note</string>
     <string name="title">Title</string>
     <string name="note">Note</string>
-    <string name="click_the_icon_to_create_your_first_note">Click the icon to create your first note</string>
+    <string name="click_the_icon_to_create_your_first_note">Click the Icon to Create your First Note</string>
     <string name="find_pdfs_please_wait">Find PDFs. Please Wait</string>
     <string name="voice_typing">Voice Typing</string>
-    <string name="no_tasks_created_yet">No tasks created. Yet</string>
+    <string name="no_tasks_created_yet">No Tasks Created. Yet....</string>
     <string name="pending_tasks">Pending Tasks</string>
     <string name="completed_tasks">Completed Tasks</string>
+    <string name="threedots">⋮</string>
+    <string name="optical_character_recognition">Optical Character Recognition</string>
+    <string name="document_scanner">Document Scanner</string>
+    <string name="canvas">Canvas</string>
+    <string name="notepad">Notepad</string>
+    <string name="pdf_viewer">Pdf Viewer</string>
+    <string name="to_do_tasks">To-do Tasks</string>
 </resources>

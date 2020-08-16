@@ -3,8 +3,7 @@ package com.dex.officesuite;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -28,13 +27,10 @@ public class ImageFullScreenActivity extends AppCompatActivity {
 
         ImageView fullScreenImageView = findViewById(R.id.fullScreenImageView);
 
-        byte[] byteArray = getIntent().getByteArrayExtra("image");
-        assert byteArray != null;
-        Bitmap bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
-        closeContextMenu();
+        Uri uri=getIntent().getData();
 
-        if(bmp!=null){
-            fullScreenImageView.setImageBitmap(bmp);
+        if(uri!=null){
+            fullScreenImageView.setImageURI(uri);
         }
 
         fullScreenImageView.setOnClickListener(new View.OnClickListener() {

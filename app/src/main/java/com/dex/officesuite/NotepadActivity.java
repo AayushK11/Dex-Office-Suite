@@ -85,7 +85,7 @@ public class NotepadActivity extends AppCompatActivity {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(NotepadActivity.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(NotepadActivity.this, R.style.AlertDialogCustom);
                 builder.setIcon(android.R.drawable.ic_dialog_alert);
                 builder.setTitle("Delete");
                 builder.setMessage("Are You Sure You Want To Delete this Note?");

@@ -11,5 +11,5 @@
     android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
     android:minHeight="?android:attr/listPreferredItemHeightSmall"
     android:textColor="?attr/textColor"
-    android:background="?attr/bgColor"
+    android:background="@android:color/transparent"
     android:singleLine="true"/>
