@@ -4,7 +4,9 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/aayushk11/dex-office-suite---hab59/badge?s=633762670bb489485c3caa7684844f64c6506023)](https://www.codefactor.io/repository/github/aayushk11/dex-office-suite---hab59)
 
+(Make sure you have access to this repo to see the CodeFactor stats)
 
+<hr>
 
 Dex Office Suite is a All in One, Free, Light Weight, High Efficiency Application Suite that provides loads of features that are but not limited to Optical Character Recognition, Document Scanning and much more.
 <br><br>
