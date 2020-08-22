@@ -6,7 +6,7 @@
 
 <hr>
 
-Dex Office Suite is a All in One, Free, Light Weight, High Efficiency Application Suite that provides loads of features that are but not limited to Optical Character Recognition, Document Scanning and much more.
+Dex Office Suite is an All in One, Free, Light Weight, High Efficiency Application Suite that provides loads of features that are but not limited to Optical Character Recognition, Document Scanning and much more.
 <br><br>
 
 
@@ -16,7 +16,7 @@ Dex Office Suite in no way captures any sort of user data. To prove this,
       There would be no Internet Permissions granted there (Android is very strict about permissions)
 <br>    
     
-Dex Office Suite also has a Voice Assistant that is still under development that makes navigating around the app much much easier. Simple say something like "Scan this Image" and the Document Scanner will open up
+Dex Office Suite also has a Voice Assistant that is still under development that makes navigating around the app much much easier. Simply say something like "Scan this Image" and the Document Scanner will open up
 <br><br>
 
 The application also has a "Dark Mode" that changes the entire theme of the application.
