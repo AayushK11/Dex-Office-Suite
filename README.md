@@ -2,7 +2,7 @@
 
 <br>
 
-[![CodeFactor](https://www.codefactor.io/repository/github/aayushk11/dex-office-suite---hab59/badge?s=633762670bb489485c3caa7684844f64c6506023)](https://www.codefactor.io/repository/github/aayushk11/dex-office-suite---hab59)
+[![CodeFactor](https://www.codefactor.io/repository/github/aayushk11/dex-office-suite/badge?s=a130b7389a882baae0156e479ff65fc7ece9fa53)](https://www.codefactor.io/repository/github/aayushk11/dex-office-suite)
 
 <hr>
 
